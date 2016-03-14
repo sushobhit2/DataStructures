@@ -17,7 +17,7 @@ void add(Node *h,int x){
 	while(h->next!=NULL){
 
 		h=h->next;
-	}  dd
+	}
 
 	h->next=cur;
 	
@@ -28,12 +28,23 @@ void display(Node *h){
 		h=h->next;
 	}
 }
+void deleteFromEnd(Node *h){
+	Node *a;
+	while(h->next!=NULL){
+		a=h;
+		h=h->next;
+		
+	}
+	a->next=NULL;
+	
+} 
 int main(){
 	struct Node *newHead;
 	struct Node *head=new Node;
  init(head,20);	
  add(head,60);
  add(head,80);
+ deleteFromEnd(head);
  display(head);
 return 0;	
 }
