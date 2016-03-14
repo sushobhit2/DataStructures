@@ -17,7 +17,7 @@ void add(Node *h,int x){
 	while(h->next!=NULL){
 
 		h=h->next;
-	}
+	}  dd
 
 	h->next=cur;
 	
